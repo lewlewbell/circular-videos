@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <title>The Beach</title>
+        <style type="text/css">
+            body {
+                background: transparent url('images/through-the-looking-glass.jpg') no-repeat;
+                background-size: cover;
+            }
+            .binoculars {
+                background: transparent url('images/binoculars.png') no-repeat;
+                width: 700px;
+                height: 337px;
+                position: absolute;
+                top: 25%;
+                left: 25%;
+            }
+            .glass {
+                box-sizing: border-box;
+                position: absolute;
+                width: 150px;
+                height: 150px;
+                border: #000 solid 12px;
+                border-radius: 50%;
+                overflow: hidden;
+                background-color: #000;
+            }
+            .glass-left {
+                top: 96px;
+                left: 135px;
+            }
+            .glass-right {
+                top: 90px;
+                right: 166px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="binoculars">
+            <div class="glass glass-left">
+                <video width="300" height="169" loop muted autoplay>
+                    <source src="video/ocean.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="glass glass-right">
+                <video width="300" height="169" loop muted autoplay>
+                    <source src="video/ocean.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </body>
+</html>
